@@ -2,11 +2,11 @@
 
 软件的名字叫holden，他是《麦田里的守望者》主人公的名字，在这里代表了一个大哥哥形象，让他去理解，支持鼓励和引导使用者。
 
-![image](https://github.com/DvHuang/WALL-E/blob/master/wali_1.png)
+![image](https://github.com/DvHuang/WALL-E/blob/master/wali_1.jpg)
 
-![image](https://github.com/DvHuang/WALL-E/blob/master/wali_2.png)
+![image](https://github.com/DvHuang/WALL-E/blob/master/wali_2.jpg)
 
-![image](https://github.com/DvHuang/WALL-E/blob/master/wali_3.png)
+![image](https://github.com/DvHuang/WALL-E/blob/master/wali_3.jpg)
 
 
 
