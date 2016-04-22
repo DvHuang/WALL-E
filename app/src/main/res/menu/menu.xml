@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+
+
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 搜索, 应该作为动作按钮展示-->
+    <item android:id="@+id/hotbook"
+        android:icon="@drawable/ic_grade_black_24dp"
+        android:title="show hot book"
+        app:showAsAction="always" />
+    <!-- 搜索, 应该作为动作按钮展示-->
+    <item android:id="@+id/mylocation"
+        android:icon="@drawable/ic_my_location_black_24dp"
+        android:title="show my location"
+        app:showAsAction="always" />
+    <item android:id="@+id/shut_down_location_service" android:title="shut down location service"></item>
+
+<!--    <item android:id="@+id/zoomIn" android:title="Zoom In"></item>
+    <item android:id="@+id/zoomOut" android:title="Zoom Out"></item>-->
+    <item android:id="@+id/hideLayer2" android:title="Hide Layer 2"></item>
+    <item android:id="@+id/showLayer2" android:title="Show Layer 2"></item>
+    <item android:title="Scroll to next object" android:id="@+id/scroll_next"></item>
+
+  <!-- 设置, 在溢出菜单中展示 -->
+<!--  <item android:id="@+id/layer2"
+      android:icon="@drawable/ic_pin_drop_black_24dp"
+      android:title="@string/abc_action_bar_home_description"
+      app:showAsAction="always" />-->
+
+
+
+</menu>

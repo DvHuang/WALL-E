@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".davy_map.BrowseMapActivity">
+    <item android:id="@+id/action_settings"
+        android:title="help"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/add" android:title="add like"></item>
+    <item android:id="@+id/sync" android:title="sync "></item>
+    <item android:title="look friend" android:id="@+id/look"></item>
+</menu>

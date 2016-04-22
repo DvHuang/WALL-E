@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <Button 
+		    android:id="@+id/btnUp"   
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentTop="true"
+		    android:layout_width="315dp"
+		    android:layout_height="wrap_content"
+		    android:text="@string/up"
+		    android:onClick="onClick_up"/>	
+	
+    <Button 
+		    android:id="@+id/btnLeft"
+		    android:layout_below="@id/btnUp" 
+		    android:layout_alignLeft="@id/btnUp"  
+		    android:layout_width="105dp"
+		    android:layout_height="wrap_content"
+		    android:text="@string/left"
+		    android:onClick="onClick_left"/>
+    
+    <Button 
+		    android:id="@+id/btnStop"   
+		    android:layout_toRightOf="@id/btnLeft"
+		    android:layout_alignTop="@id/btnLeft"
+		    android:layout_width="105dp"
+		    android:layout_height="wrap_content"
+		    android:text="@string/stop"
+		    android:onClick="onClick_stop"/>
+    
+    <Button 
+		    android:id="@+id/btnRight"   
+		    android:layout_toRightOf="@id/btnStop"
+		    android:layout_alignTop="@id/btnStop"
+		    android:layout_width="105dp"
+		    android:layout_height="wrap_content"
+		    android:text="@string/right"
+		    android:onClick="onClick_right"/>
+    
+    <Button 
+		    android:id="@+id/btnDown"
+		    android:layout_below="@id/btnLeft" 
+		    android:layout_alignLeft="@id/btnLeft"  
+		    android:layout_width="315dp"
+		    android:layout_height="wrap_content"
+		    android:text="@string/down"
+		    android:onClick="onClick_down"/>
+
+	<Button
+	    android:id="@+id/btnRed"
+	    android:layout_below="@id/btnDown"
+	    android:layout_alignLeft="@id/btnLeft"
+	    android:layout_width="105dp"
+	    android:layout_height="wrap_content"
+	    android:text="@string/red" 
+	    android:onClick="onClick_red"/>
+	
+	<Button
+	    android:id="@+id/btnGreen"
+	    android:layout_toRightOf="@id/btnRed"
+	    android:layout_alignTop="@id/btnRed"
+	    android:layout_width="105dp"
+	    android:layout_height="wrap_content"
+	    android:text="@string/green" 
+	    android:onClick="onClick_green"/>
+	
+	<Button
+	    android:id="@+id/btnBlue"
+	    android:layout_toRightOf="@id/btnGreen"
+	    android:layout_alignTop="@id/btnGreen"
+	    android:layout_width="105dp"
+	    android:layout_height="wrap_content"
+	    android:text="@string/blue" 
+	    android:onClick="onClick_blue"/>
+	
+	<Button 
+		    android:id="@+id/btnTrack"
+		    android:layout_below="@id/btnRed" 
+		    android:layout_alignLeft="@id/btnRed"  
+		    android:layout_width="315dp"
+		    android:layout_height="wrap_content"
+		    android:text="@string/track"
+		    android:onClick="onClick_track"/>
+
+	<TextView
+	    android:id="@+id/txtMessagesReceived"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@id/btnTrack"
+	    android:layout_width="fill_parent"
+	    android:layout_height="200dp"
+	    android:scrollbars="vertical" />
+
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2010, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain liek_recyle copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+                  package="com.example.android.wali"
+                  android:versionCode="2"
+                  android:versionName="2.0">
+
+    <!-- 获得位置权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 使用wifi访问网络权限 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- socket-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- wifi -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <!-- 电源 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="15" />
+
+
+
+    <application
+        android:name="custom_vollay.Custom_Application"
+        android:label="@string/app_name"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_add_black_24dp">
+
+        <uses-library android:name="android.test.runner" />
+
+        <!-- The default activity of the app; displays search results. -->
+        <activity
+           android:name=".wali"
+           android:launchMode="singleTask"
+           android:theme="@style/CustomActionBarTheme"
+           android:label="Holden">
+           <intent-filter>
+               <action android:name="android.intent.action.MAIN" />
+               <category android:name="android.intent.category.LAUNCHER" />
+           </intent-filter>
+           <!-- Receives the search request. -->
+           <intent-filter>
+               <action android:name="android.intent.action.SEARCH" />
+               <!-- No category needed, because the Intent will specify this class component-->
+           </intent-filter>
+                <!-- Points to searchable meta data. -->
+           <meta-data android:name="android.app.searchable"
+               android:resource="@xml/searchable" />
+        </activity>
+        <!--vote activity-->
+        <activity
+            android:name="vote.VoterActivity"
+            android:label="NewQuestion"
+            android:theme="@style/CustomActionBarTheme2"
+            android:icon="@drawable/ic_add_grey_black_24dp"
+            ></activity>
+        <activity android:name="vote.CreateNewQuestion"> </activity>
+        <activity android:name="vote.AnswerQuestion"> </activity>
+        <activity android:name="vote.Help"> </activity>
+        <activity android:name="vote.viewQuestionStats"> </activity>
+        <activity android:name="vote.ViewingStats"> </activity>
+        <activity android:name="vote.AnswerQuestionSend"> </activity>
+
+        <!--map activity-->
+        <activity
+            android:name="library_map.Library_MapActivity"
+            android:logo="@drawable/map_object"
+            android:label="流通书库T-4"
+            android:theme="@style/CustomActionBarTheme">
+        </activity>
+        <!-- Points to searchable meta data. -->
+        <!-- Displays the definition of liek_recyle word. -->
+        <activity android:name="com.example.android.wali.WordActivity" />
+
+        <activity
+            android:name="like.likeActivity"
+            android:label="Like"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            />
+        <activity
+            android:name="time_day.time_main"
+            android:label="Day"
+
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+
+
+            />
+        <!--android:theme="@style/CustomActionBarTheme2"-->
+
+        <activity
+            android:name="like_recyle_2.like_recyle_2_MainActivity"
+            android:label="Like"
+
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+
+
+        />
+
+
+        <!--android:allowBackup="true"-->
+
+        <activity android:name="like_recyle.StaggeredGridLayoutActivity" />
+        <activity android:name="dialogPlus.a"
+            android:theme="@style/AppBaseTheme"
+            android:label="@string/app_name"
+
+
+        />
+
+
+
+
+
+
+
+        <!-- Provides search suggestions for words and their definitions_old. -->
+        <provider android:name="com.example.android.wali.DictionaryProvider"
+            android:authorities="com.example.android.wali.DictionaryProvider" />
+            <!-- Points to searchable activity so the whole app can invoke search. -->
+            <!--<meta-data android:name="android.app.default_searchable"-->
+            <!--android:value=".wali" />-->
+        <service android:name="soc_an.StepCounterService" />
+    </application>
+
+
+
+
+</manifest>

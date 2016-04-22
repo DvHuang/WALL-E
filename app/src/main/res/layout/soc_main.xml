@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+<EditText 
+    android:id="@+id/txtMessage"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" />
+    
+<Button
+    android:id="@+id/send"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Send Message" 
+    android:onClick="onClickSend"/>
+
+    <TextView
+    android:id="@+id/txtMessagesReceived"
+    android:layout_width="fill_parent" 
+    android:layout_height="200dp"
+    android:scrollbars = "vertical" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/send_recv" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="START or STOP"
+        android:onClick="onClickSS"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/step" />
+
+</LinearLayout>

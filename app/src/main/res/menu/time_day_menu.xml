@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".davy_map.BrowseMapActivity">
+    <item android:id="@+id/time_help"
+        android:title="help"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/time_add" android:title="add item"></item>
+    <item android:id="@+id/time_sync" android:title="sync "></item>
+    <item android:id="@+id/statistics7" android:title="last week"></item>
+    <item android:id="@+id/statistics30" android:title="last month"></item>
+    <item android:id="@+id/statisticsall" android:title="all history "></item>
+
+
+</menu>

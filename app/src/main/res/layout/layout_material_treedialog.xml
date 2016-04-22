@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="380dp"
+    android:background="@drawable/material_dialog_window"
+    android:padding="32dp"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/material_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/material_card2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/contentView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/dialogtree"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/title_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginRight="24dp"
+                android:textColor="@color/black_de"
+                android:textSize="16sp"
+
+                android:text=""/>
+
+            <EditText
+            android:id="@+id/Mname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="To love oneself is the beginning of a lifelong romance.  ~ ~ "
+            android:textColorHint="@color/white"
+            android:background="#00000000"
+            android:lineSpacingMultiplier="1.6"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:typeface="serif"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="18dp"
+            android:paddingBottom="12dp"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="right"
+            android:gravity="center_vertical">
+
+
+
+            <Button
+                android:id="@+id/btn_dialog_no"
+                style="@style/ActionButton2"
+                android:textColor="@color/black_de"
+                android:stateListAnimator="@null"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="12dp"
+                android:text="CANCEL"
+                />
+
+            <Button
+                android:id="@+id/btn_dialog_ok"
+                style="@style/ActionButton2"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="12dp"
+                android:stateListAnimator="@null"
+                android:textColor="@color/appelred"
+                android:text="OK"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
