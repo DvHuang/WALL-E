@@ -1,11 +1,12 @@
 # WALL-E
 
-
 软件的名字叫holden，他是《麦田里的守望者》主人公的名字，在这里代表了一个大哥哥形象，让他去理解，支持鼓励和引导使用者。
 
-![image](https://github.com/DvHuang/WALL-E/blob/master/wali.png)
-![image](https://github.com/DvHuang/WALL-E/blob/master/wali2.png)
-![image](https://github.com/DvHuang/WALL-E/blob/master/wali3.png)
+![image](https://github.com/DvHuang/WALL-E/blob/master/wali_1.png)
+
+![image](https://github.com/DvHuang/WALL-E/blob/master/wali_2.png)
+
+![image](https://github.com/DvHuang/WALL-E/blob/master/wali_3.png)
 
 
 
@@ -15,13 +16,13 @@
 
 0. 有些话，觉得给朋友说显得矫情，给父母说有代沟，不说又憋得慌，那就给机器人说。在与机器人聊天的过程中，服务器会记录用户对事物的看法（消极，积极，各种感情表述）。
 
-1.Hobby 页面可直接输入喜欢的事物，这一项本是为毕设中的图书推荐所作，这里虽然可以接受任何的事物“项”作为特征，但会在服务器里根据已有书籍进行筛选。
+1.Hobby 页面可直接输入喜欢的事物，这一项本是为毕设中的图书推荐所作，这里虽然可以接受任何的事物“项”作为特征，但会在服务器里根据已有书籍进行筛选。(后面成功的话会将所有项进行统计，被多次提到应该放入数据库)
 
 2.Library 页面 是一个额外的功能，图书馆基于位置推荐图书的服务，这里当然也可以将位置作为特征，现在仅仅利用wifi指纹实现初略定位，定位这块后面会用wifi+pdr->粒子滤波（话说这里和他们做激光+里程计->粒子滤波的思想是一样的，运动方程+观测方程->信息融合）
 
 3.生理曲线，在做...
 
-进行完类的映射之后会将用户在say to holden 环节写下的心里话发给映射之后的类别，双方互评均为最高的情况下，系统会认为双方存在互相喜欢的可能性。
+进行完类的映射之后会将用户在say to holden环节写下的心里话发给映射之后的类别，双方互评均为最高的情况下，系统会认为双方存在互相喜欢的可能性。
 
 
 做完之后在实验室本科群里发了下，反应并不好，我也觉得并没有想象中的那么有意思，这东西没有真实数据去形成类的联系都是空谈～～～
